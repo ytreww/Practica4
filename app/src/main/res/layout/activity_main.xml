@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="6dp"
+    tools:context="com.uabc.lsc.a01128619.practica4.MainActivity"
+    android:weightSum="2"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="1" />
+
+    <Chronometer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer3"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/listView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Pausa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/buttonPausa"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:text="Vuelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonInicio"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:id="@+id/buttonVuelta"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+
+    <Button
+        android:text="Inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:id="@+id/buttonInicio"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light" />
+
+</LinearLayout>
